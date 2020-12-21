@@ -1,0 +1,42 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item active:hover {
+    color: white;
+}
+
+#navbarDropdown {
+    color: plum;
+}
+
+#navbarDropdown:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: purple;
+    border-style: none;
+}
+
+.dropdown-item {
+    color: plum;
+}
+
+.dropdown-item:hover {
+    color: white;
+    font-weight: bold;
+    background-color: purple;
+}
+
+.dropdown-item:active {
+    color: plum;
+    font-weight: bold;
+}

@@ -1,0 +1,170 @@
+body {
+    font-family: monospace;
+    font-size: 1.5em;
+    background-color: rosybrown;
+    /*margin: 1em; */
+  /*  box-sizing: border-box;*/
+}
+
+h3 {
+    font-size: 3em;
+    grid-area: h3;
+}
+
+/*h2 {
+    font-size: 2em;
+}*/
+
+
+header {
+    grid-area: head;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-style: dashed;
+    background-color: chartreuse;
+}
+
+#headline_header {
+   /* grid-area: h3;*/
+    text-align: left;
+    margin-left: 10px;
+}
+
+#headline {
+    display: none;
+}
+
+#text {
+    grid-area: text;
+    background-color: red;
+}
+
+#text p {
+    margin-left: 2%;
+    margin-right: 2%; 
+    margin-top: 2%;
+}
+/*
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item active:hover {
+    color: white;
+}
+
+#navbarDropdown {
+    color: plum;
+}
+
+#navbarDropdown:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: purple;
+    border-style: none;
+}
+
+.dropdown-item {
+    color: plum;
+}
+
+.dropdown-item:hover {
+    color: white;
+    font-weight: bold;
+    background-color: purple;
+}
+
+.dropdown-item:active {
+    color: plum;
+    font-weight: bold;
+}*/
+
+
+
+/*
+#header {
+    grid-area: header;
+    background-color: aquamarine;
+}*/
+
+/* Subnav*/ /*
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+} */
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr 11fr;
+    grid-template-areas: 
+        "head head head" 
+        ". . ."
+        "text text text";
+}
+
+/*Tablet*/
+@media screen and (min-width: 982px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 5fr 2fr 16fr;
+        grid-template-areas: 
+        "head head head"
+        ". . ."
+        "text text text";
+    }
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .navbar {
+        position: relative;
+        /*top: */
+        column-span: all;
+        grid-area: nav;
+    }  
+    
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4fr 1fr 2fr 16fr;
+        grid-template-areas: 
+        "head head head"
+        "nav nav nav"
+        "h3 h3 h3"
+        "text text text";
+    }
+    
+    #headline_header {
+        text-align: center;
+    }
+    
+    /*
+    header h3 {
+       display: none;
+    }  */  
+
+    /*#headline {
+        font-size: 5em;
+        background-color: deeppink;
+        text-align: center;
+    }*/
+     
+    
+}

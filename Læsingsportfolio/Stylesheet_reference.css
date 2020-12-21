@@ -1,0 +1,161 @@
+body {
+    font-family: monospace;
+    font-size: 1.5em;
+    background-color: rosybrown;
+   /* margin: 1em; */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+/*
+.dropdown {
+    grid-area: menu;
+    background-color: purple;
+}*/
+
+/*h2 {
+    font-size: 2em;
+}*/
+
+header {
+    grid-area: head;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-style: dashed;
+    background-color: chartreuse;
+}
+
+#headline_header {
+   /* grid-area: h3;*/
+    text-align: left;
+    margin-left: 10px;
+}
+
+#headline {
+    display: none;
+}
+/*
+#headline {
+    grid-area: h3;
+    background-color: chartreuse;
+    text-align: center;
+}*/
+
+#h2_1 {
+    grid-area: h2_1;
+    background-color: orangered;
+}
+
+#dref {
+    grid-area: dref;
+    background-color: orangered;
+}
+
+#button {
+    background-color: darkseagreen;
+}
+
+#h2_2 {
+    grid-area: h2_2;
+    background-color: coral;
+}
+
+#kref {
+    grid-area: kref;
+    background-color: coral;
+}
+
+#h2_3 {
+    grid-area: h2_3;
+    background-color: teal;
+}
+
+#wref {
+    grid-area: wref;
+    background-color: teal;
+}
+
+#h2_4 {
+    grid-area: h2_4;
+    background-color: bisque;
+}
+
+#pref {
+    grid-area: pref;
+    background-color: bisque;
+}
+
+/* Subnav*/ /*
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+} */
+ 
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr; 
+    grid-template-areas: 
+        "head head head"
+        "h3 h3 h3" 
+        "h2_1 h2_1 ."
+        "dref dref dref"
+        ". . ."
+        "h2_2 h2_2 ."
+        "kref kref kref"
+        ". . ."
+        "h2_3 h2_3 ."
+        "wref wref wref"
+        ". . ."
+        "h2_4 h2_4 ."
+        "pref pref pref";
+}
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .navbar {
+        position: relative;
+        /*top: */
+        column-span: all;
+        grid-area: nav;
+    }  
+    
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4fr 1fr 2fr;
+        grid-template-areas: 
+        "head head head"
+        "nav nav nav"
+        ". h3 ."
+        "h2_1 . ."
+        "dref dref dref"
+        ". . ."
+        "h2_2 . ."
+        "kref kref kref"
+        ". . ."
+        "h2_3 . ."
+        "wref wref wref"
+        ". . ."
+        "h2_4 . ."
+        "pref pref pref";
+    }
+    
+    #headline_header {
+        text-align: center;
+    }
+} 

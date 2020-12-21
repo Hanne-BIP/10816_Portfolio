@@ -1,0 +1,420 @@
+body {
+    font-family: monospace;
+    font-size: 1.5em;
+    background-color: rosybrown;
+    /*margin: 1em; */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header {
+    grid-area: head;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-style: dashed;
+    background-color: chartreuse;
+}
+
+#headline_header {
+   /* grid-area: h3;*/
+    text-align: left;
+    margin-left: 10px;
+}
+
+#headline {
+    display: none;
+}
+h3 {
+    font-size: 3em;
+}
+/*
+h2 {
+    font-size: 1.5em;
+}
+
+#headline {
+    grid-area: h3;
+    background-color: lightpink;
+    text-align: center;
+}*/
+
+#h2_1 {
+    grid-area: h2_1;
+    background-color: orangered;
+}
+
+#t_1 {
+    grid-area: t_1;
+    background-color: orangered;
+}
+
+#button {
+    background-color: darkseagreen;
+}
+
+#h2_2 {
+    grid-area: h2_2;
+    /*background-color: coral;*/
+}
+
+#t_2 {
+    grid-area: t_2;
+    /*background-color: coral;*/
+}
+
+#h2_3 {
+    grid-area: h2_3;
+    background-color: purple;
+}
+
+#t_3 {
+    grid-area: t_3
+    background-color: purple;
+}
+
+#t_31 {
+    grid-area: t_31;
+}
+
+#t_32 {
+    grid-area: t_32;
+}
+
+#t_2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgtext {
+    text-align: center;
+}
+
+#farvehjul_img {
+    grid-area: hj;
+}
+
+#cmyk {
+    text-align: center;
+}
+
+#billede {
+    grid-area: img;
+    background-color: skyblue;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.text p {
+    margin-left: 2%;
+    margin-right: 2%; 
+    margin-top: 2%;
+}
+
+section p, h2, button, li {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#kp {
+    background-image: url(Primrose_s.png);
+    height: 18vh;
+    background-size: cover;
+    border: 5px dashed red;
+}
+
+#fh {
+    background-image: url(Primrose_s.png);
+    height: 50vh;
+    background-size: cover;
+    border: 5px dashed red;
+}
+
+#hj {
+    width: 40%;
+}
+
+#fr {
+    background-image: url(Primrose_s.png);
+    height: 45vh;
+    background-size: cover;
+    border: 5px dashed red;    
+}
+
+#hsb {
+    background-image: url(Primrose_s.png);
+    height: 30vh;
+    background-size: cover;
+    border: 5px dashed red;
+}
+
+/*.dropdown {
+    grid-area: menu;
+    background-color: purple;
+}
+
+#header {
+    grid-area: header;
+    background-color: aquamarine;
+}*/
+/*
+.kp > div {
+    background-image: url(Primrose_s.png);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr; 
+    grid-template-areas: 
+        "h2_1 . ."
+        "t_1 t_1 t_1"
+        "t_1 t_1 t_1";
+}
+
+.fh > section {
+    background-image: url(Primrose_s.png);
+    background-size: cover;/*
+    background-position: center;
+    align-content: center;
+}*/
+
+
+/*
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr 10fr 10fr 1fr 10fr; 
+    grid-template-areas: 
+        "head head head" 
+        ". . ."
+        "h2_1 h2_1 ."
+        "t_1 t_1 t_1"
+        "img img img"
+        "h2_2 h2_2 ."
+        "t_2 t_2 t_2"
+        "h2_3 h2_3 ."
+        "t_3 t_3 t_3"
+        "t_31 t_32 t_32";
+} */
+
+/*Tablet*/
+@media screen and (min-width: 982px) {
+    #kp {
+        background-image: url(Primrose_s.png);
+        height: 22vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }
+
+    #fh {
+        background-image: url(Primrose_s.png);
+        height: 52vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }
+
+    #hj {
+        width: 30%;
+    }
+
+    #fr {
+        background-image: url(Primrose_s.png);
+        height: 55vh;
+        background-size: cover;
+        border: 5px dashed red;    
+    }
+
+    #hsb {
+        background-image: url(Primrose_s.png);
+        height: 37vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }  
+
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .navbar {
+        position: relative;
+        /*top: */
+        column-span: all;
+        grid-area: nav;
+    }  
+    /*
+    body {
+        display: inline-block;
+    }*/
+    
+    #kp {
+        background-image: url(Primrose_s.png);
+        height: 25vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }
+    /*
+    #farvehjul_img {
+        grid-area: hji;
+        display: block;
+    }
+    
+    #s_fj {
+        grid-area: s_fj;
+    }
+    
+    .flexbox-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    
+    #fh {
+        background-image: url(Primrose_s.png);
+        height: 50vh;
+        background-size: cover;
+        border: 5px dashed red;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        /*display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+       /* display: grid;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 3fr 2fr 1fr;
+        grid-template-areas: 
+            "h2_2 . ."
+            "t_2 t_2 hj"
+            "t_2 t_2 hj"
+            ". . .";*/
+        /*
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+        grid-template-areas:
+            "h2_2 . ."
+            "t_2 t_2 fh";*/
+    }
+    
+#h2_2 {
+    display: block;
+}
+
+#t_2 {
+    /*display: inline;*/
+    float: left;
+}
+
+#hj {
+    /*width: 20%;*/
+    display: inline-block;
+    width: 19%;
+    position: static;
+    right: 2%;
+    top: 50%;
+    }
+
+#farvehjul_img .imgtext, .imgsource {
+    font-size: 14px;
+    text-align: right;
+}
+
+#farvehjul_img {
+    border: 3px dashed blue;
+}
+/*
+#farvehjul_img {
+    display: inline-block;
+    /*text-align: right;*/
+}
+/*
+.imgtext {
+    display: inline-block;
+}*/
+
+    /*
+    #t_2 {
+        clear: both;
+        text-align: justify;
+        float: left;
+    }
+
+    #hj {
+        width: 0%;
+        position: static;
+        right: 2%;
+        top: 60%;
+        /*align-content: center;*/
+    }/*
+    
+    #farvehjul_img {
+        position: static;
+        right: 2%;
+       /* display: inline;
+        width: 40%;
+        position: absolute;*/
+       /* text-align: center;/*
+    }
+    
+    .source {
+        position: static;
+        left: 2%;
+        bottom: 2%;
+    }*/
+    
+    #fr {
+        background-image: url(Primrose_s.png);
+        height: 45vh;
+        background-size: cover;
+        border: 5px dashed red;    
+    }
+
+    #hsb {
+        background-image: url(Primrose_s.png);
+        height: 30vh;
+        background-size: cover;
+        border: 5px dashed red;
+        display: inline;
+    }
+    
+    /*
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr 2fr 2fr 5fr 1fr 2fr 5fr;
+        grid-template-areas: 
+        "head head head"
+        "nav nav nav"
+        "h3 h3 h3"
+        "h2_1 h2_1 img"
+        "t_1 t_1 img"
+        ". . ."
+        "h2_2 h2_2 ."
+        "t_2 t_2 t_2";
+    }
+    
+    #headline_header {
+        text-align: center;
+    }*/
+    /*
+    #hj {
+        width: 20%;
+    }*/
+    
+}
